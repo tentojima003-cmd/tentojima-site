@@ -1,1 +1,227 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>心と身体の調律空間 天都島｜北海道網走 タイ伝統療法・レンタルスペース・スクール</title>
+<meta name="description" content="北海道網走市。森のそばの、心と身体を整えるしずかな場所。タイ伝統療法トークセンのサロン、20名収容のレンタルスペース、タイ古式スクール（宿泊可）。">
+<style>
+  :root{
+    --bg:#F5F1E8; --panel:#FFFFFF; --ink:#2B2B2B; --sub:#5A5A50;
+    --accent:#3B5D50; --accent2:#B08968; --line:#DED7C6;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{background:var(--bg); color:var(--ink); font-family:"Hiragino Mincho ProN","Yu Mincho",serif; line-height:1.9; -webkit-text-size-adjust:100%;}
+  a{color:inherit;}
+  .wrap{max-width:960px; margin:0 auto; padding:0 20px;}
+
+  /* ヘッダー */
+  header{position:sticky; top:0; z-index:50; background:rgba(245,241,232,.92); backdrop-filter:blur(6px); border-bottom:1px solid var(--line);}
+  .nav{display:flex; align-items:center; justify-content:space-between; height:60px;}
+  .logo{font-size:1.15rem; letter-spacing:.3em;}
+  .logo small{display:block; font-size:.5rem; letter-spacing:.3em; color:var(--sub);}
+  .menu{display:flex; gap:18px; font-size:.85rem;}
+  .menu a{text-decoration:none; color:var(--sub);}
+  .menu a:hover{color:var(--accent);}
+  @media(max-width:720px){ .menu{display:none;} }
+
+  /* ヒーロー */
+  .hero{padding:72px 0 64px; text-align:center; background:linear-gradient(180deg,#EAEBE2 0%, #F5F1E8 70%);}
+  .hero h1{font-size:1.9rem; letter-spacing:.1em; line-height:1.7; margin-bottom:14px;}
+  .hero p{color:var(--sub); font-size:1rem; margin-bottom:28px;}
+  .btns{display:flex; gap:12px; justify-content:center; flex-wrap:wrap;}
+  .btn{display:inline-block; padding:12px 24px; border-radius:30px; text-decoration:none; font-size:.9rem; letter-spacing:.05em;}
+  .btn-main{background:var(--accent); color:#fff;}
+  .btn-line{background:#06C755; color:#fff;}
+  .btn-sub{background:transparent; color:var(--accent); border:1px solid var(--accent);}
+
+  section{padding:56px 0;}
+  h2{font-size:1.4rem; letter-spacing:.12em; text-align:center; margin-bottom:8px;}
+  .lead{text-align:center; color:var(--sub); font-size:.92rem; margin-bottom:34px;}
+
+  .grid3{display:grid; grid-template-columns:repeat(3,1fr); gap:18px;}
+  @media(max-width:720px){ .grid3{grid-template-columns:1fr;} }
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:26px 22px;}
+  .card h3{font-size:1.1rem; color:var(--accent); margin-bottom:10px; letter-spacing:.06em;}
+  .card p{font-size:.92rem; color:var(--ink);}
+
+  /* 料金 */
+  .price{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:24px; margin-bottom:18px;}
+  .price h3{font-size:1.15rem; color:var(--accent); margin-bottom:12px; border-bottom:1px solid var(--line); padding-bottom:8px;}
+  .price table{width:100%; border-collapse:collapse;}
+  .price td{padding:7px 0; font-size:.94rem; vertical-align:top; border-bottom:1px dashed var(--line);}
+  .price td:last-child{text-align:right; white-space:nowrap; color:var(--accent); padding-left:12px;}
+  .price .note{font-size:.82rem; color:var(--sub); margin-top:10px;}
+
+  /* 声 */
+  .voices{display:grid; grid-template-columns:repeat(2,1fr); gap:16px;}
+  @media(max-width:720px){ .voices{grid-template-columns:1fr;} }
+  .voice{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:20px 22px; font-size:.95rem; color:var(--ink);}
+  .voice span{display:block; margin-top:8px; font-size:.8rem; color:var(--sub);}
+
+  /* アクセス */
+  .info{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:24px;}
+  .info dl{display:grid; grid-template-columns:auto 1fr; gap:8px 18px; font-size:.94rem;}
+  .info dt{color:var(--sub); white-space:nowrap;}
+  @media(max-width:520px){ .info dl{grid-template-columns:1fr;} .info dt{margin-top:8px;} }
+
+  .concept{background:linear-gradient(180deg,#EFEDE3,#F5F1E8); text-align:center;}
+  .concept p{max-width:640px; margin:0 auto; color:var(--ink);}
+
+  footer{border-top:1px solid var(--line); padding:30px 0; text-align:center; font-size:.82rem; color:var(--sub);}
+  footer a{color:var(--accent); text-decoration:none; margin:0 8px;}
+  .photo-slot{height:180px; border:1px dashed #b7ae98; border-radius:12px; display:flex; align-items:center; justify-content:center; color:#a99f86; font-size:.8rem; background:#fff; margin:18px 0;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="logo">天都島<small>TENTOJIMA</small></div>
+    <nav class="menu">
+      <a href="#value">3つの価値</a>
+      <a href="#service">サービス</a>
+      <a href="#price">料金</a>
+      <a href="#voice">お客様の声</a>
+      <a href="#access">アクセス</a>
+      <a href="#contact">ご予約</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ヒーロー -->
+<div class="hero">
+  <div class="wrap">
+    <h1>癒し・学び・出会いが、<br>ひとつの場所に。</h1>
+    <p>北海道網走・森のそばで、心と身体を整えるしずかな時間を。</p>
+    <div class="btns">
+      <a class="btn btn-line" href="https://lin.ee/rR8lpez" target="_blank" rel="noopener">LINEで予約・相談</a>
+      <a class="btn btn-main" href="tel:090-5986-4378">お電話：090-5986-4378</a>
+      <a class="btn btn-sub" href="#service">サービスを見る</a>
+    </div>
+  </div>
+</div>
+
+<!-- 3つの価値 -->
+<section id="value" class="wrap">
+  <h2>3つの価値</h2>
+  <p class="lead">天都島は、リラクゼーションサロンではありません。<br>癒し・学び・つながりを育てる、地域のよりどころです。</p>
+  <div class="grid3">
+    <div class="card"><h3>癒す</h3><p>タイ伝統療法トークセンと足圧整体で、一日をがんばった身体を、ゆっくりゆるめる時間を。森を眺める、しずかな個室で。</p></div>
+    <div class="card"><h3>学ぶ</h3><p>本場チェンマイの認定校で学んだ技術を、少人数でていねいに。家族を癒したい方も、セラピストを目指す方も。</p></div>
+    <div class="card"><h3>出会う</h3><p>20名まで使えるレンタルスペースで、教室・マルシェ・ワークショップ。人と人がつながる場所を。</p></div>
+  </div>
+</section>
+
+<!-- サービス -->
+<section id="service" class="wrap">
+  <h2>サービス</h2>
+  <p class="lead">ひとつの場所に、3つの過ごし方。</p>
+  <div class="photo-slot">ここに 森・薪ストーブ・個室などの写真を入れると魅力が伝わります（任意）</div>
+  <div class="grid3">
+    <div class="card"><h3>リラクゼーションサロン</h3><p>タイ伝統療法トークセン＆足圧整体。木槌のやわらかな音、窓の外の森、薪ストーブのぬくもり。揉み返しの少ない、心地よいひとときを。</p></div>
+    <div class="card"><h3>レンタルスペース</h3><p>約24畳・20名まで。Wi-Fi、120インチプロジェクター、音響、キッチン家電、薪ストーブ完備。教室・イベント・撮影など多目的に。</p></div>
+    <div class="card"><h3>タイ古式スクール</h3><p>オン・タイマッサージスクール認定校（チェンマイ市）。少人数制。遠方の方は宿泊しての集中受講も可能です。</p></div>
+  </div>
+</section>
+
+<!-- 料金 -->
+<section id="price" class="wrap">
+  <h2>料金・メニュー</h2>
+  <p class="lead">すべて税込価格です。</p>
+
+  <div class="price">
+    <h3>リラクゼーションサロン</h3>
+    <table>
+      <tr><td>トークセン ＆ 足圧整体（基本メニュー）</td><td>60分 5,000円</td></tr>
+      <tr><td>オプション：タイ古式＆ストレッチ</td><td>10分 1,000円〜</td></tr>
+      <tr><td>オプション：リフレクソロジー</td><td>20分 2,000円</td></tr>
+      <tr><td>オプション：チネイザン</td><td>30分 3,000円</td></tr>
+    </table>
+    <p class="note">※心身を整え、リラックスしていただくための時間です。</p>
+  </div>
+
+  <div class="price">
+    <h3>レンタルスペース</h3>
+    <table>
+      <tr><td>スペースのみ</td><td>800円 / 1時間</td></tr>
+      <tr><td>スペース＋キッチン</td><td>1,000円 / 1時間</td></tr>
+      <tr><td>土日祝</td><td>上記それぞれ +200円 / 1時間</td></tr>
+    </table>
+    <p class="note">※飲食を伴うご利用も可能です（保健所の営業許可取得済）。</p>
+  </div>
+
+  <div class="price">
+    <h3>タイ古式スクール</h3>
+    <table>
+      <tr><td>タイ古式マッサージ ベーシックコース（テキスト付）</td><td>100,000円</td></tr>
+      <tr><td>タイ古式マッサージ プロフェッショナルコース（テキスト付）</td><td>100,000円</td></tr>
+      <tr><td>タイ伝統療法トークセン コース（テキスト＋トークセン一式付）</td><td>100,000円</td></tr>
+      <tr><td>ディプロマ（修了証）発行</td><td>別途 10,000円</td></tr>
+      <tr><td>宿泊（希望者・素泊まり／最大3名）</td><td>1泊 5,000円</td></tr>
+    </table>
+    <p class="note">各コース 講習時間30時間。受講は随時受付（講習日時は都度ご相談）。</p>
+  </div>
+</section>
+
+<!-- お客様の声 -->
+<section id="voice" class="wrap">
+  <h2>お客様の声</h2>
+  <p class="lead">天都島で過ごした時間の感想を、いくつかご紹介します。</p>
+  <div class="voices">
+    <div class="voice">「広くて静かで、プライベートが守られる空間。落ち着きます。」<span>サロンをご利用のお客様</span></div>
+    <div class="voice">「窓からの森の景色がよくて、薪ストーブにも癒されました。」<span>サロンをご利用のお客様</span></div>
+    <div class="voice">「トークセンの木槌の音が、なんとも心地よいです。」<span>サロンをご利用のお客様</span></div>
+    <div class="voice">「揉み返しがなく、施術のあともおだやかに過ごせました。」<span>サロンをご利用のお客様</span></div>
+  </div>
+</section>
+
+<!-- コンセプト -->
+<section class="concept">
+  <div class="wrap">
+    <h2>天都島について</h2>
+    <p>人は、心・身体・人とのつながりが調和するとき、本来の自分らしさを取り戻せる。<br>
+    天都島は、そのきっかけをお届けする場所でありたい。<br>
+    癒し、学び、つながり。そのひとつひとつが、この地域に温かな循環を広げていくことを願っています。</p>
+  </div>
+</section>
+
+<!-- アクセス -->
+<section id="access" class="wrap">
+  <h2>アクセス・店舗情報</h2>
+  <p class="lead"></p>
+  <div class="info">
+    <dl>
+      <dt>店名</dt><dd>心と身体の調律空間 天都島</dd>
+      <dt>住所</dt><dd>〒093-0042 北海道網走市字潮見44-47　<a href="https://www.google.com/maps/place/%E5%A4%A9%E9%83%BD%E5%B3%B6/data=!4m2!3m1!1s0x0:0x5b3e2569084f5273?sa=X&ved=1t:2428&ictx=11" target="_blank" rel="noopener" style="color:var(--accent);">Googleマップで見る ›</a></dd>
+      <dt>電話</dt><dd><a href="tel:090-5986-4378" style="color:var(--accent);">090-5986-4378</a></dd>
+      <dt>営業時間</dt><dd>9:00〜18:00（時間外はご相談ください）</dd>
+      <dt>定休日</dt><dd>不定休</dd>
+      <dt>駐車場</dt><dd>あり（約10台）</dd>
+    </dl>
+  </div>
+</section>
+
+<!-- ご予約・お問い合わせ -->
+<section id="contact" class="wrap" style="text-align:center;">
+  <h2>ご予約・お問い合わせ</h2>
+  <p class="lead">ご予約・ご相談は、お気軽にどうぞ。</p>
+  <div class="btns">
+    <a class="btn btn-line" href="https://lin.ee/rR8lpez" target="_blank" rel="noopener">公式LINEで予約・相談</a>
+    <a class="btn btn-main" href="tel:090-5986-4378">お電話：090-5986-4378</a>
+    <a class="btn btn-sub" href="https://calendar.app.google/vPzmLp8JtgVqoa8m8" target="_blank" rel="noopener">Web予約カレンダー</a>
+    <a class="btn btn-sub" href="https://www.instagram.com/tentojima_abashiri/" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a href="./privacy.html">プライバシーポリシー</a>｜<a href="./tokushoho.html">特定商取引法に基づく表記</a>
+    <p style="margin-top:12px;">© 心と身体の調律空間 天都島</p>
+  </div>
+</footer>
+
+</body>
+</html>
 
