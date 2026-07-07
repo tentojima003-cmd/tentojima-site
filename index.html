@@ -65,6 +65,12 @@
   .voice{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:20px 22px; font-size:.95rem; color:var(--ink);}
   .voice span{display:block; margin-top:8px; font-size:.8rem; color:var(--sub);}
 
+  /* こんな方におすすめ */
+  .reclist{max-width:640px; margin:0 auto; background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:26px 34px;}
+  .reclist ul{padding-left:1.2em;}
+  .reclist li{font-size:1rem; line-height:2.15; color:var(--ink);}
+  .reclist li::marker{color:var(--accent2);}
+
   /* アクセス */
   .info{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:24px;}
   .info dl{display:grid; grid-template-columns:auto 1fr; gap:8px 18px; font-size:.94rem;}
@@ -90,7 +96,7 @@
       <a href="#value">3つの価値</a>
       <a href="#service">サービス</a>
       <a href="#price">料金</a>
-      <a href="#voice">お客様の声</a>
+      <a href="#recommend">こんな方に</a>
       <a href="#access">アクセス</a>
       <a href="#contact">ご予約</a>
     </nav>
@@ -171,15 +177,19 @@
   </div>
 </section>
 
-<!-- お客様の声 -->
-<section id="voice" class="wrap">
-  <h2>お客様の声</h2>
-  <p class="lead">天都島で過ごした時間の感想を、いくつかご紹介します。</p>
-  <div class="voices">
-    <div class="voice">「広くて静かで、プライベートが守られる空間。落ち着きます。」<span>サロンをご利用のお客様</span></div>
-    <div class="voice">「窓からの森の景色がよくて、薪ストーブにも癒されました。」<span>サロンをご利用のお客様</span></div>
-    <div class="voice">「トークセンの木槌の音が、なんとも心地よいです。」<span>サロンをご利用のお客様</span></div>
-    <div class="voice">「揉み返しがなく、施術のあともおだやかに過ごせました。」<span>サロンをご利用のお客様</span></div>
+<!-- こんな方におすすめ -->
+<section id="recommend" class="wrap">
+  <h2>こんな方におすすめ</h2>
+  <p class="lead">天都島は、こんな時間を求める方に寄り添います。</p>
+  <div class="reclist">
+    <ul>
+      <li>日々の忙しさの中で、自分を整える時間がほしい方</li>
+      <li>静かな個室で、ゆっくりと過ごしたい方</li>
+      <li>強い刺激や揉み返しが苦手な方</li>
+      <li>森の景色や薪ストーブの空間に癒されたい方</li>
+      <li>タイ伝統療法トークセンを体験してみたい方</li>
+      <li>年齢・性別を問わず、安心して過ごせる場所を探している方</li>
+    </ul>
   </div>
 </section>
 
